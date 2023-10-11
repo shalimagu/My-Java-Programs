@@ -4,7 +4,7 @@ public class totalCapitalLettersInAString {
     public static void main(String[] args) {
 
         String str1 = "Do Not Stop L1earning";
-        int count = 0;
+        int upperCase = 0;
         int lowerCase=0;
         int digit=0;
         int whitespace=0;
@@ -14,7 +14,7 @@ public class totalCapitalLettersInAString {
 
               if(Character.isUpperCase(c))
               {
-                  count=count+1;
+                  upperCase=upperCase+1;
 
               }
               else if(Character.isLowerCase(c))
@@ -31,7 +31,7 @@ public class totalCapitalLettersInAString {
               }
 
           }
-          System.out.println("Total UpperCase letters are: "+count);
+          System.out.println("Total UpperCase letters are: "+upperCase);
         System.out.println("Total lowercase letters are: " +lowerCase);
         System.out.println("Total Digits are :" + digit);
         System.out.println("Total whitespaces are:"+ whitespace);
